@@ -1,15 +1,4 @@
 #!/usr/bin/env python3
-"""
-CPM Survey Text Analysis Tool (Refactored)
-- Fixes init order for API keys/translator
-- Removes missing function call and orphaned docstring in generate_reports
-- Parameterizes SQL to avoid injection/quoting issues
-- Adds theme_assignments table and assigns each response to a theme for exact counts
-- Improves representative-quote attribution
-- Adds basic matplotlib charts (bar charts and stacked bar for Column B)
-- Supports a non-interactive "assume yes" mode via environment variable ASSUME_YES=1
-- Uses OpenAI client in modern style (`from openai import OpenAI`)
-"""
 
 import os
 import re
